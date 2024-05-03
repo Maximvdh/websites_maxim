@@ -1,0 +1,65 @@
+img {
+    position: static;
+    right: 0px;
+    width: 447px;
+    height: 300px;
+}
+body {
+	background-color: black;
+}
+section {
+    margin: 20px;
+    background-color: grey;
+     border-style: solid;
+    border-radius: 8px;
+    border-color: red;
+    border-width: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1.0);
+    padding: 20px;
+}
+video {
+    position: static;
+    right: 0px;
+    width: 500px;
+    height: 200px;
+}
+h1 {
+    font-size: 45px; 
+}
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #555;
+}
+
+
+#insta {
+    width: 20px;
+    height: 20px;
+}
+a:link {
+  color: blue;
+}
+
+/* visited link */
+a:visited {
+  color: blue;
+}
+
+/* mouse over link */
+a:hover {
+  color: blue;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
