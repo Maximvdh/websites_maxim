@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moederdag</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f8f8;
+            animation: backgroundColorChange 10s infinite alternate-reverse;
+        }
+        @keyframes backgroundColorChange {
+            from {
+                background-color: #f8f8f8;
+            }
+            to {
+                background-color: #ffe6e6;
+            }
+        }
+        #container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            animation: heartbeat 1.5s infinite ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes heartbeat {
+            from {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            animation: pulse 2s infinite alternate;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        @keyframes pulse {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img src="fam.jpg" alt="familiefoto">
+        <h1>Fijne Moederdag!</h1>
+        <p>Beste mama,</p>
+        <p>Bedankt voor alles wat je voor mij doet. Vandaag is jouw dag en ik hoop dat je ervan geniet.</p>
+        <p>Met veel liefde,</p>
+        <p>Maxim</p>
+        <button onclick="sendLove()">Stuur liefde!</button>
+    </div>
+
+    <script>
+        function sendLove() {
+            alert("Veel liefde gestuurd naar mama!");
+        }
+    </script>
+</body>
+</html>
